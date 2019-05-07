@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+   background-color: blueviolet
+}
+
+.App {
+    background-color: #2f4858;
+    max-width: 992px;
+    margin: auto
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px, rgb(7, 7, 7);
+    background-color: brown;
+    padding: 10px 20px;
+}
+
+.nav-menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.nav-menu__link {
+    display: inline-block;
+    margin: 5px;
+    border: 1px saddlebrown;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+
+.home-image {
+    width: 100%;
+    height: 850px;
+    background-image: url('./burguerQlogosinFondo.png');
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.main-content {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+}

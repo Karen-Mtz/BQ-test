@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Route} from 'react-router-dom';
+import './css/style.css';
+import Navbar from './components/navbar';
+import Home from './components/home';
+import Breakfast from './components/Breakfast';
+import Meals from './components/Meals';
+import Breakfastfood from './components/Breakfastfood';
 
-function App() {
-  return (
+class App extends React.Component{
+  render() {
+    return (
+      <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Navbar title="Burger Queen" />
+    <Route exact path="/" render={() => <Home title="-- BURGER QUEEN --"/>}/>
+    <Route exact path="/breakfast" component={Breakfast}/>
+    <Route exact path="/meals" component={Meals}/>
+    <Route exact path="/breakfast/food" component={Breakfastfood}/>
     </div>
+    </BrowserRouter>
   );
 }
+}
+
 
 export default App;
