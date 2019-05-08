@@ -1,7 +1,17 @@
 import React from 'react';
-import {BrowserRouter, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
-const Breakfast = (props) => (
+let hour = new Date().getHours();
+
+
+if(hour >= 5 && hour < 12) {
+console.log('esto es desayuno ' + hour + ' am');
+} else {
+  console.log('es comida')
+}
+
+const Breakfast = () => (
+
     <div className="main-content">
         <div className="container">
             <h2>BREAKFAST PAGE</h2>

@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const Navbar = (props) => (
+const Navbar = (props) => {
+    return(
     <nav>
         <h2 className='logo'>{props.title}</h2>
         <ul className='nav-menu'>
@@ -11,5 +12,5 @@ const Navbar = (props) => (
         </ul>
     </nav>
 );
-
+    }
 export default Navbar;
