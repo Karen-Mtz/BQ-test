@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 import './css/style.css';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
+import Details from './components/Details';
 import Meals from './components/Meals';
 import Drinks from './components/Drinks';
 import Complements from './components/Complements';
@@ -20,7 +20,7 @@ class App extends React.Component{
     <Navbar/>
     <Menu/>
     <Route exact path="/meals" component={Meals}/>
-    <Route exact path="/" component={Home}/>
+    <Route exact path="/" component={Details}/>
     <Route exact path="/breakfastfood" component={Breakfastfood}/>
     <Route exact path="/breakfastdrinks" component={BreakfastDrinks}/>
     <Route exact path="/drinks" component={Drinks}/>
