@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/BQ-test/static/css/main.133c4f2c.chunk.css",
+    "main.js": "/BQ-test/static/js/main.08661005.chunk.js",
+    "main.js.map": "/BQ-test/static/js/main.08661005.chunk.js.map",
+    "runtime~main.js": "/BQ-test/static/js/runtime~main.caba2668.js",
+    "runtime~main.js.map": "/BQ-test/static/js/runtime~main.caba2668.js.map",
+    "static/js/2.1a82c1cf.chunk.js": "/BQ-test/static/js/2.1a82c1cf.chunk.js",
+    "static/js/2.1a82c1cf.chunk.js.map": "/BQ-test/static/js/2.1a82c1cf.chunk.js.map",
+    "index.html": "/BQ-test/index.html",
+    "precache-manifest.b5a204fc6ae5faeef468cb2152127d87.js": "/BQ-test/precache-manifest.b5a204fc6ae5faeef468cb2152127d87.js",
+    "service-worker.js": "/BQ-test/service-worker.js",
+    "static/css/main.133c4f2c.chunk.css.map": "/BQ-test/static/css/main.133c4f2c.chunk.css.map"
+  }
+}
