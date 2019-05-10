@@ -19,8 +19,9 @@ class App extends React.Component{
     <div className="App">
     <Navbar/>
     <Menu/>
+    <Details/>
     <Route exact path="/meals" component={Meals}/>
-    <Route exact path="/" component={Details}/>
+
     <Route exact path="/breakfastfood" component={Breakfastfood}/>
     <Route exact path="/breakfastdrinks" component={BreakfastDrinks}/>
     <Route exact path="/drinks" component={Drinks}/>
