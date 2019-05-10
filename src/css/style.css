@@ -5,7 +5,7 @@
 .App {
     display: grid;
     grid-template-columns: auto 100px 100px 100px;
-    grid-template-rows: 3;
+    grid-template-rows: 75px 70px;
 }
 
 .Nav-bq {
@@ -19,6 +19,8 @@
     position: relative
 }
 
+
+
 .Order-Details{
 margin-right: 55px;
 float:right;
@@ -28,7 +30,7 @@ font-size: 25px;
 
 .Main-menu{
     background-color: #2f4858; 
-grid-row: 2; 
+
 }
 
 a {
@@ -50,6 +52,7 @@ a {
 
 .main-content {
     grid-row: 3;
+    grid-column: 1 ;
     height: 100%;
     background-color: #2f4858;
     margin-top: 0%;
@@ -65,6 +68,34 @@ a {
 .Ticket-details-h {
     color: white;
    text-align: center;
+}
+
+.New-order {
+    background-color: #f9d802;
+    padding: 22px 17px;
+    text-align: center;
+    border-radius: 7px;
+    display: inline-block;
+    color: white;
+    margin-top: 500px;
+    margin-left: 90px;
+
+}
+
+.container {
+    position: fixed;
+    margin-top:5px;
+}
+
+.Box {
+    width:100%;
+margin:5px 5px;
+padding:30px;
+font-size:italic;
+background-color:white;
+color:#000;
+border-radius: 5px;
+margin-top: 20px;
 }
 
 body {

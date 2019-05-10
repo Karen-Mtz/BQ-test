@@ -3,7 +3,8 @@ import React from 'react';
 const Meals = (props) => (
     <div className="main-content">
         <div className="container">
-            <h2>MEALS PAGE</h2>
+            <p className="Box">Hamburguesa Sencilla</p>
+            <p className="Box">Hamburguesa Doble</p>
         </div>
     </div>
 );

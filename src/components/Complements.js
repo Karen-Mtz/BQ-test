@@ -3,7 +3,8 @@ import React from 'react';
 const Complements = (props) => (
     <div className="main-content">
         <div className="container">
-            <h2>Complements Page</h2>
+        <p className="Box">Papas a la francesa</p>
+            <p className="Box">Aros de cebolla</p>
         </div>
     </div>
 );

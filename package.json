@@ -12,7 +12,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "homepage": "https://karen-mtz.github.io/BQ-test/"
   },
   "eslintConfig": {
     "extends": "react-app"

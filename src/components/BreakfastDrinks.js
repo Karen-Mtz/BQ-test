@@ -3,8 +3,9 @@ import React from 'react';
 const BreakfastDrinks = (props) => (
     <div className="main-content">
         <div className="container">
-            <h2>BREAKFAST DRINKS</h2>
-            <p>Café</p>
+        <p className="Box">Café americano</p>
+            <p className="Box">Café con leche</p>
+            <p className="Box">Jugo natural</p>
         </div>
     </div>
 );
