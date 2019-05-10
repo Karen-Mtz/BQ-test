@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.133c4f2c.chunk.css",
-    "main.js": "/static/js/main.5ab4f6b2.chunk.js",
-    "main.js.map": "/static/js/main.5ab4f6b2.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.1a82c1cf.chunk.js": "/static/js/2.1a82c1cf.chunk.js",
-    "static/js/2.1a82c1cf.chunk.js.map": "/static/js/2.1a82c1cf.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.815b66c676645a35426e6b70156f320b.js": "/precache-manifest.815b66c676645a35426e6b70156f320b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.133c4f2c.chunk.css.map": "/static/css/main.133c4f2c.chunk.css.map"
+    "main.css": "/BQ-test/static/css/main.133c4f2c.chunk.css",
+    "main.js": "/BQ-test/static/js/main.08661005.chunk.js",
+    "main.js.map": "/BQ-test/static/js/main.08661005.chunk.js.map",
+    "runtime~main.js": "/BQ-test/static/js/runtime~main.caba2668.js",
+    "runtime~main.js.map": "/BQ-test/static/js/runtime~main.caba2668.js.map",
+    "static/js/2.1a82c1cf.chunk.js": "/BQ-test/static/js/2.1a82c1cf.chunk.js",
+    "static/js/2.1a82c1cf.chunk.js.map": "/BQ-test/static/js/2.1a82c1cf.chunk.js.map",
+    "index.html": "/BQ-test/index.html",
+    "precache-manifest.b5a204fc6ae5faeef468cb2152127d87.js": "/BQ-test/precache-manifest.b5a204fc6ae5faeef468cb2152127d87.js",
+    "service-worker.js": "/BQ-test/service-worker.js",
+    "static/css/main.133c4f2c.chunk.css.map": "/BQ-test/static/css/main.133c4f2c.chunk.css.map"
   }
 }
