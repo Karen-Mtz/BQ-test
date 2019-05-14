@@ -1,10 +1,15 @@
 import React from 'react';
+import Data from './data.json';
 
 const Meals = (props) => (
     <div className="main-content">
         <div className="container">
-            <p className="Box">Hamburguesa Sencilla</p>
-            <p className="Box">Hamburguesa Doble</p>
+            {Data.map((product, index) => {
+                console.log(Data)
+                return (
+                    <p>{Data.item}</p>
+                )
+            })}
         </div>
     </div>
 );
