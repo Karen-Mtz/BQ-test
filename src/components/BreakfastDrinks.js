@@ -1,13 +1,21 @@
 import React from 'react';
+import Data from './data.json';
 
-const BreakfastDrinks = (props) => (
-    <div className="main-content">
-        <div className="container">
-        <p className="Box">Café americano</p>
-            <p className="Box">Café con leche</p>
-            <p className="Box">Jugo natural</p>
+class BreakfastDrinks extends React.Component {
+    render () {
+        return (
+            <div className="main-content">
+            <div className="container">
+            {Data.map((product, index) => {
+            return(
+                <p className="Box">{Data.item}</p>
+            )
+        })} 
         </div>
     </div>
 );
+        
+    }
+}
 
 export default BreakfastDrinks;

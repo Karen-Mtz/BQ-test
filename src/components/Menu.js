@@ -10,8 +10,8 @@ const Menu = () => {
         <div className="Main-menu">
             <nav>
             <ul>
-                <li className='Nav-food-and-drinks'><Link className="nav-menu__link" to="/breakfastfood"><a>Alimentos</a></Link></li> 
-                <li className='Nav-food-and-drinks'><Link className="nav-menu__link" to="/breakfastdrinks"><a>Bebidas</a></Link></li>
+                <li className='Nav-food-and-drinks'><Link className="nav-menu__link" to="/breakfastfood">Alimentos</Link></li> 
+                <li className='Nav-food-and-drinks'><Link className="nav-menu__link" to="/breakfastdrinks">Bebidas</Link></li>
             </ul>
             <hr />
             </nav>
@@ -22,11 +22,11 @@ const Menu = () => {
             <div className="Main-menu">
                 <nav>
             <ul>
-            <li className='Nav-food-and-drinks'><Link className="nav-menu__link" to="/meals"><a>Alimentos</a></Link></li>
+            <li className='Nav-food-and-drinks'><Link className="nav-menu__link" to="/meals">Alimentos</Link></li>
             
-            <li className='Nav-food-and-drinks'><Link className="nav-menu__link" to="/drinks"><a>Bebidas</a></Link></li>
+            <li className='Nav-food-and-drinks'><Link className="nav-menu__link" to="/drinks">Bebidas</Link></li>
             
-            <li className='Nav-food-and-drinks'><Link className="nav-menu__link" to="/complements"><a>Complementos</a></Link></li>                
+            <li className='Nav-food-and-drinks'><Link className="nav-menu__link" to="/complements">Complementos</Link></li>                
             </ul>
             </nav>
             <hr />
