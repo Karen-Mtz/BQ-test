@@ -3,7 +3,14 @@ import { Route, Redirect } from "react-router-dom";
 import { AuthContext } from "./Auth";
 
 const PrivateRoute = ({ component: RouteComponent, ...rest }) => {
-  const {currentUser} = useContext(AuthContext);
+  const { currentUser, loading } = useContext(AuthContext);
+
+  console.log("loading", loading)
+
+  if (loading) {
+    return "Loadig...";
+  }
+  
   return (
     <Route
       {...rest}
