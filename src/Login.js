@@ -5,11 +5,11 @@ import { AuthContext } from "./Auth.js";
 
 const Login = ({ history }) => {
   const handleLogin = useCallback(
-    async event => {
+  event => {
       event.preventDefault();
       const { email, password } = event.target.elements;
       try {
-        await app
+        app
           .auth()
           .signInWithEmailAndPassword(email.value, password.value);
         history.push("/");
@@ -23,12 +23,13 @@ const Login = ({ history }) => {
   const { currentUser } = useContext(AuthContext);
 
   if (currentUser) {
+    console.log('hey')
     return <Redirect to="/" />;
-  }
-
+  } 
+  console.log('fucks')
   return (
     <div>
-      <h1>Log in</h1>
+      <h1>Log in 1</h1>
       <form onSubmit={handleLogin}>
         <label>
           Email
@@ -42,6 +43,7 @@ const Login = ({ history }) => {
       </form>
     </div>
   );
+  
 };
 
 export default withRouter(Login);
