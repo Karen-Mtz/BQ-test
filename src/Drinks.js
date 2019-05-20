@@ -1,10 +1,14 @@
 import React from 'react';
+import Data from './data.json';
+
+let drinks = Data.filter(Data => Data.type === 'drinks')
 
 const Drinks = (props) => (
     <div className="main-content">
         <div className="container">
-        <p className="Box">Refresco</p>
-            <p className="Box">Agua</p>
+{drinks.map((drinks, index) => {
+    return <button className="Box" key={index}>{drinks.item}</button>
+ })}
         </div>
     </div>
 );

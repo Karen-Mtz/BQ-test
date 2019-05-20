@@ -1,21 +1,16 @@
 import React from 'react';
 import Data from './data.json';
 
-class BreakfastDrinks extends React.Component {
-    render () {
-        return (
-            <div className="main-content">
-            <div className="container">
-            {Data.map((product, index) => {
-            return(
-                <p className="Box">{Data.item}</p>
-            )
-        })} 
+let breakfastDrinks = Data.filter(Data => Data.type === 'breakfast drinks')
+
+const BreakfastDrinks = () => (
+    <div className="main-content">
+        <div className="container">
+        {breakfastDrinks.map((breakfastDrinks, index) => {
+    return <button className="Box" key={index}>{breakfastDrinks.item}</button>
+ })}
         </div>
     </div>
 );
-        
-    }
-}
 
 export default BreakfastDrinks;

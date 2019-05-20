@@ -19,10 +19,11 @@ const App = () => {
     <AuthProvider>
       <Router>
         <div className="App">
-        <Navbar/>
-        <Details/>
-          <PrivateRoute exact path="/" component={Home} />
-          <Route exact path="/login" component={Login} />
+          <Navbar />
+          <Home />
+          <Details />
+          {/* <PrivateRoute exact path="/" component={Home} />
+          <Route exact path="/login" component={Login} /> */}
           <Route exact path="/meals" component={Meals} />
           <Route exact path="/breakfastfood" component={Breakfastfood} />
           <Route exact path="/breakfastdrinks" component={BreakfastDrinks} />
