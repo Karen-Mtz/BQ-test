@@ -13,6 +13,7 @@ import Complements from './Complements';
 import Breakfastfood from './Breakfastfood';
 import Menu from './Menu';
 import BreakfastDrinks from './BreakfastDrinks';
+import NewOrder from './NewOrder';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Navbar />
           <Home />
           <Details />
+          <NewOrder />
           {/* <PrivateRoute exact path="/" component={Home} />
           <Route exact path="/login" component={Login} /> */}
           <Route exact path="/meals" component={Meals} />

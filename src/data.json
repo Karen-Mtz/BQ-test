@@ -2,64 +2,63 @@
     {
         "id": "sandw-01",
         "item": "Sandwich de jamón y queso",
+        "img": "http://i66.tinypic.com/1zzizd4.png",
         "price": 10,
         "type": "breakfast food"
     }, {
         "id": "amcoff-021",
         "item": "Café americano",
+        "img": "http://i64.tinypic.com/29dux38.png",
         "price": 5,
         "type": "breakfast drinks"
     }, {
         "id": "milkcoff-022",
         "item": "Café con leche",
+        "img": "http://i64.tinypic.com/dfede.png",
         "price": 7,
         "type": "breakfast drinks"
     }, {
         "id": "juice-023",
         "item": "Jugo de frutas natural",
+        "img": "http://i63.tinypic.com/14jmc0x.png",
         "price": 7,
         "type": "breakfast drinks"
     }, {
         "id": "sburger-031",
         "item": "Hamburguesa sencilla",
+        "img": "http://i65.tinypic.com/tapkew.png",
         "meat": ["Res", "Pollo", "Vegetariana"],
         "price": 10,
         "type": "meals"
     }, {
         "id": "dburger-032",
         "item": "Hamburguesa doble",
+        "img": "http://i67.tinypic.com/jpjxgx.png",
         "meat": ["Res", "Pollo", "Vegetariana"],
         "price": 15,
         "type": "meals"
     }, {
         "id": "soda-041",
         "item": "Refresco 500 ml",
+        "img":"http://i64.tinypic.com/2afid0o.png",
         "price": 7,
-        "type": "drinks"
-    }, {
-        "id": "soda-042",
-        "item": "Refresco 750 ml",
-        "price": 10,
         "type": "drinks"
     }, {
         "id": "water-043",
         "item": "Agua 500 ml",
+        "img": "http://i67.tinypic.com/8y8fq1.png",
         "price": 5,
-        "type": "drinks"
-    }, {
-        "id": "water-044",
-        "item": "Agua 750 ml",
-        "price": 7,
         "type": "drinks"
     }, {
         "id": "fries-051",
         "item": "Papas a la francesa",
-        "img": "http://i67.tinypic.com/20fqptf.png",
+        "img": "http://i64.tinypic.com/dptppe.png",
         "price": 5,
         "type": "complements"
     }, {
         "id": "rings-052",
         "item": "Aros de cebolla",
+        "img": "http://i65.tinypic.com/mcbriv.png",
         "price": 5,
         "type": "complements"
     }, {

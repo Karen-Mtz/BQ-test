@@ -78,14 +78,19 @@ a {
     background-color: #f9d802;
     padding: 22px 17px;
     text-align: center;
-    border-radius: 7px;
-    display: inline-block;
+    /* border-radius: 7px; */
+    /* display: inline-block; */
     color: white;
-    margin-top: 500px;
-    margin-left: 90px;
+    /* margin-top: 500px; */
+    /* margin-left: 90px; */
 
 }
-
+.client-name{
+    font-family: "Roboto";
+    font-size: "20px";
+    color: white;
+  margin-left: 13px;
+}
 .Yellow{
     background-color: #f9d802;
     text-align: center;
@@ -101,14 +106,35 @@ a {
 }
 
 .Box {
-    width:50%;
-margin:5px 5px;
-padding:30px;
-font-size:italic;
-background-color:white;
-color:#000;
-border-radius: 5px;
-margin-top: 20px;
+
+    margin: 5px 5px;
+    font-size: italic;
+    background-color: white;
+    color: #000;
+    border-radius: 26px;
+    margin-top: 20px;
+    width: 421px;
+    display: flex;
+}
+
+.btn-img {
+    float: left;
+}
+
+.btn-name{
+    color: black;
+    font-family: "Roboto";
+    display: inline-table;
+    font-size: 26px;
+
+}
+
+.btn-price {
+    color: red;
+    padding: -33px;
+    font-size: 23px;
+    float: left
+
 }
 
 body {
