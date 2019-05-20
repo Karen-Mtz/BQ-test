@@ -1,37 +1,39 @@
 import React from 'react';
 import Data from './data.json';
-import Details from './Details.js';
+// import Details from './Details.js';
 
 let burgers = Data.filter(Data => Data.type === 'meals')
 
 export default class Meals extends React.Component {
-    state = { message: null };
+    state = { burgers: []};
 
     renderBtns = () =>
-        burgers.map(burgers => (
+        burgers.map(burger => (
             // Pass parameters in'div_id' and div_name data attributes
                     <button
                         className="Box"
-                        onClick={this.handleDivClicked}
-                        key={burgers.id}
-                        data-div_id={burgers.item}
-                        data-div_name={`Precio: ${burgers.price}`}
+                        onClick={()=>this.handleDivClicked(burger)}
+                        key={burger.id}
+                        data-div_id={burger.item}
+                        data-div_name={`Precio: ${burger.price}`}
                     >
 
-                        <img className="btn-img" src={burgers.img} />
-                        <p className="btn-name">{burgers.item}
-                            <p className="btn-price">${burgers.price}</p>
+                        <img className="btn-img" src={burger.img} />
+                        <p className="btn-name">{burger.item}
+                            <p className="btn-price">${burger.price}</p>
                         </p>
                     </button>
         ));
 
-    handleDivClicked = ev => {
+    handleDivClicked = item => {
         this.setState({
             // Retrieve the passed parameters from 'div_id' and 'div_name' datasets
-            message: `${ev.currentTarget.dataset.div_id}, . ${
-                ev.currentTarget.dataset.div_name
-                }`
+            //message: `${ev.currentTarget.dataset.div_id},  ${
+            //    ev.currentTarget.dataset.div_name
+            //    }`,
+            burgers: [...this.state.burgers, item]  
         });
+        this.props.addToTicket(item);
     };
 
     render() {

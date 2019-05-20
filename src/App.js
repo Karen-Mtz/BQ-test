@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './css/style.css';
 import Home from "./Home";
@@ -15,18 +15,32 @@ import Menu from './Menu';
 import BreakfastDrinks from './BreakfastDrinks';
 import NewOrder from './NewOrder';
 
-const App = () => {
+class App  extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentTicket: []
+    };
+  }
+
+  handleAddTicket (item) {
+    this.setState({
+      currentTicket: [...this.state.currentTicket, item]
+    })
+  }
+
+  render () {
   return (
     <AuthProvider>
       <Router>
         <div className="App">
           <Navbar />
           <Home />
-          <Details />
+          <Details ticketElements={this.state.currentTicket}/>
           <NewOrder />
           {/* <PrivateRoute exact path="/" component={Home} />
           <Route exact path="/login" component={Login} /> */}
-          <Route exact path="/meals" component={Meals} />
+          <Route exact path="/meals" render={(props) => <Meals {...props} addToTicket={this.handleAddTicket.bind(this)} />}/>
           <Route exact path="/breakfastfood" component={Breakfastfood} />
           <Route exact path="/breakfastdrinks" component={BreakfastDrinks} />
           <Route exact path="/drinks" component={Drinks} />
@@ -35,6 +49,7 @@ const App = () => {
       </Router>
     </AuthProvider>
   );
+  };
 };
 
 export default App;
