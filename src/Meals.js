@@ -1,5 +1,6 @@
 import React from 'react';
 import Data from './data.json';
+import Details from './Details.js';
 
 let burgers = Data.filter(Data => Data.type === 'meals')
 
@@ -13,5 +14,7 @@ const Meals = (props) => (
         </div>
     </div>
 );
+
+
 
 export default Meals;
