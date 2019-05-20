@@ -14,7 +14,11 @@
     background-color: #ffffff;
     
 }
-
+.Bmenu{
+    display: block;
+    padding: 3%;
+    width: 27px;
+}
 .Nav-bq-menu {
     position: relative
 }
