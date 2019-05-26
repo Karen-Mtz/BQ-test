@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/BQ-test/static/css/main.64fa15c0.chunk.css",
-    "main.js": "/BQ-test/static/js/main.2b02015b.chunk.js",
-    "main.js.map": "/BQ-test/static/js/main.2b02015b.chunk.js.map",
+    "main.css": "/BQ-test/static/css/main.e7d29b08.chunk.css",
+    "main.js": "/BQ-test/static/js/main.f5a7ab17.chunk.js",
+    "main.js.map": "/BQ-test/static/js/main.f5a7ab17.chunk.js.map",
     "runtime~main.js": "/BQ-test/static/js/runtime~main.caba2668.js",
     "runtime~main.js.map": "/BQ-test/static/js/runtime~main.caba2668.js.map",
-    "static/js/2.346f2b55.chunk.js": "/BQ-test/static/js/2.346f2b55.chunk.js",
-    "static/js/2.346f2b55.chunk.js.map": "/BQ-test/static/js/2.346f2b55.chunk.js.map",
+    "static/js/2.9935e9ba.chunk.js": "/BQ-test/static/js/2.9935e9ba.chunk.js",
+    "static/js/2.9935e9ba.chunk.js.map": "/BQ-test/static/js/2.9935e9ba.chunk.js.map",
     "index.html": "/BQ-test/index.html",
-    "precache-manifest.b06a154a0f43e5effcdf4c701ebbf2c3.js": "/BQ-test/precache-manifest.b06a154a0f43e5effcdf4c701ebbf2c3.js",
+    "precache-manifest.ac154b86b3b4a691e19b79d2564c4636.js": "/BQ-test/precache-manifest.ac154b86b3b4a691e19b79d2564c4636.js",
     "service-worker.js": "/BQ-test/service-worker.js",
-    "static/css/main.64fa15c0.chunk.css.map": "/BQ-test/static/css/main.64fa15c0.chunk.css.map"
+    "static/css/main.e7d29b08.chunk.css.map": "/BQ-test/static/css/main.e7d29b08.chunk.css.map"
   }
 }
