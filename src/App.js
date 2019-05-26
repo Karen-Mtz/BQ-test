@@ -20,13 +20,20 @@ class App  extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentTicket: []
+      currentTicket: [],
+      quantity: 0
     };
   }
 
   handleAddTicket (item) {
     this.setState({
       currentTicket: [...this.state.currentTicket, item]
+    })
+  }
+
+  handleAddQuantity (e) {
+    this.setState ({
+      quantity: e
     })
   }
 
@@ -37,11 +44,11 @@ class App  extends Component {
         <div className="App">
           <Navbar />
           <Home />
-          <Details ticketElements={this.state.currentTicket}/>
+          <Details ticketElements={this.state.currentTicket} products={this.state.quantity}/>
           <NewOrder />
           {/* <PrivateRoute exact path="/" component={Home} />
           <Route exact path="/login" component={Login} /> */}
-          <Route exact path="/meals" render={(props) => <Meals {...props} addToTicket={this.handleAddTicket.bind(this)} />}/>
+          <Route exact path="/meals" render={(props) => <Meals {...props} addToTicket={this.handleAddTicket.bind(this)} addQuantity={this.handleAddQuantity.bind(this)} />}/>
           <Route exact path="/breakfastfood" render={(props) => <Breakfastfood {...props} addToTicket={this.handleAddTicket.bind(this)}/>}/>
           <Route exact path="/breakfastdrinks" render={(props) => <BreakfastDrinks {...props} addToTicket={this.handleAddTicket.bind(this)}/>} />
           <Route exact path="/drinks" component={Drinks} />
