@@ -119,6 +119,12 @@ a {
 
 .btn-img {
     float: left;
+    height: 1%;
+    margin-top: 12px;
+    margin-right: 6px;
+    margin-left: 6px;
+    margin-bottom: 11px;
+
 }
 
 .btn-name{

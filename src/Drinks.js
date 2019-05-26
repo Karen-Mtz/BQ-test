@@ -8,7 +8,7 @@ const Drinks = (props) => (
         <div className="container">
             {drinks.map((drinks, index) => {
                 return <button className="Box" key={index}>
-                    <img className="btn-img" src={drinks.img}  alt={drinks.item} />
+                    <img className="btn-img" src={drinks.img}  alt="drinks" />
                     <p className="btn-name">{drinks.item}
                     <p className="btn-price">${drinks.price}</p>
                     </p>

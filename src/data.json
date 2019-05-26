@@ -29,14 +29,16 @@
         "img": "http://i65.tinypic.com/tapkew.png",
         "meat": ["Res", "Pollo", "Vegetariana"],
         "price": 10,
-        "type": "meals"
+        "type": "meals",
+        "quantity": 5
     }, {
         "id": "dburger-032",
         "item": "Hamburguesa doble",
         "img": "http://i67.tinypic.com/jpjxgx.png",
         "meat": ["Res", "Pollo", "Vegetariana"],
         "price": 15,
-        "type": "meals"
+        "type": "meals",
+        "quantity": 0
     }, {
         "id": "soda-041",
         "item": "Refresco 500 ml",

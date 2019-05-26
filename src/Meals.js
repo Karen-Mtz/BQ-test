@@ -1,76 +1,58 @@
 import React from 'react';
 import Data from './data.json';
-// import Details from './Details.js';
+import InputNumeric from 'react-input-numeric';
+
 
 let burgers = Data.filter(Data => Data.type === 'meals')
 
 export default class Meals extends React.Component {
-    state = { burgers: []};
-
+    state = { burgers: [],
+        value: 0
+   };
+    
     renderBtns = () =>
         burgers.map(burger => (
-            // Pass parameters in'div_id' and div_name data attributes
-                    <button
+                    <object
                         className="Box"
                         onClick={()=>this.handleDivClicked(burger)}
                         key={burger.id}
-                        data-div_id={burger.item}
-                        data-div_name={`Precio: ${burger.price}`}
                     >
 
-                        <img className="btn-img" src={burger.img} />
-                        <p className="btn-name">{burger.item}
-                            <p className="btn-price">${burger.price}</p>
-                        </p>
-                    </button>
+                        <img className="btn-img" src={burger.img} alt="burger" />
+                        <p className="btn-name">{burger.item} </p>
+                            <p className="btn-price"><br /> ${burger.price}</p>
+
+                            <InputNumeric
+  value={this.state.value}
+  onChange={this.updateQuantity}
+/>
+
+                    </object>
         ));
 
     handleDivClicked = item => {
         this.setState({
-            // Retrieve the passed parameters from 'div_id' and 'div_name' datasets
-            //message: `${ev.currentTarget.dataset.div_id},  ${
-            //    ev.currentTarget.dataset.div_name
-            //    }`,
-            burgers: [...this.state.burgers, item]  
+            burgers: [...this.state.burgers, item],  
+           
+           
         });
         this.props.addToTicket(item);
+
     };
+
+    updateQuantity = (e) => {
+        this.setState ({
+            value: e.value     
+        });
+    }
 
     render() {
         return (
             <div className="main-content">
                 <div className="container">
                 {this.renderBtns()}
-                
-                {this.state.message && (
-                    <div className="alert alert-primary">{this.state.message}</div>
-                    )}
                     </div>
                     </div>
         )
     }
 }
-
-
-
-// export class Meals extends React.Component {
-//     render() {
-//         return (
-//             <div className="main-content">
-//             <div className="container">
-//             {burgers.map((burgers, index) => {
-//                 return <button className="Box" key={index}>
-//                 <img className="btn-img" src={burgers.img}/>
-//                 <p className="btn-name">{burgers.item}
-//                 <p className="btn-price">${burgers.price}</p>
-//                 </p>
-//                 </button>
-//              })}
-//         </div>
-//     </div>
-//         );
-//     }
-// }
-
-
-// export default Meals;

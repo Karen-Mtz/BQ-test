@@ -1,7 +1,7 @@
 import React from "react";
 import app from "./base";
 import {Link} from 'react-router-dom';
-let hour = 15;
+let hour = 18;
 
 const Home = () => {
   if (hour >= 5 && hour < 12) {

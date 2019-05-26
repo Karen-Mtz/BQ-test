@@ -54,7 +54,7 @@ export default class NewOrder extends React.Component {
                                 Nombre del cliente:
           <input type="text" value={this.state.value} onChange={this.handleChange} />
                             </label>
-                            <input type="submit" className="Yellow" value="CONTINUAR" href="javascript:void(0);" onClick={() => this.closeModal()} />
+                            <input type="submit" className="Yellow" value="CONTINUAR"  onClick={() => this.closeModal()} />
                         </form>
                     </div>
                 </Modal>
