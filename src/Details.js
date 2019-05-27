@@ -9,9 +9,9 @@ export default class Details extends React.Component {
 
     changeTotal = price => {
       
-    // console.log(this.props.ticketElements.map(element => (
-    //     element.price
-    // )))
+    console.log(this.props.ticketElements.map(element => (
+        element.price
+    )))
     }
     
 
@@ -21,14 +21,26 @@ export default class Details extends React.Component {
             <section className="Ticket-details">
                  {this.changeTotal()}
                 <div>
-        <h3 className="Ticket-details-h">Cantidad    Descripción    Monto</h3>
+      
+        <table className="Detail">
+            <tbody>
+            <tr className="Ticket-details-h"> 
+                <td>Cantidad</td>
+                <td>Descripción</td>
+                <td>Monto</td>
+        </tr>
+        </tbody>
+        </table>
         </div>
        
         {this.props.ticketElements.map(element =>(
             <div key={element.id}>
-             <h3 className="Ticket-details-h">  {this.props.products} {element.item}    $ {element.price}</h3>
+                <object className="Box-ticket">
+                    <p className="ticket-text"> {this.props.products} {element.item} <span className="btn-price">${element.price}</span> </p>
+                </object>
+           
            </div>))}
-<h1>TOTAL:  </h1>
+            
         
 </section>
         );

@@ -3,7 +3,6 @@ import Data from "./data.json";
 import InputNumeric from "react-input-numeric";
 
 let burgers = Data.filter(Data => Data.type === "meals");
-console.log(burgers)
 /* Filtrando data del json */
 
 /* Creando y exportando componente de clase */
@@ -14,7 +13,7 @@ ese array pasará como prop al componente ticket
 y con un value 0 que igual será prop para ticket */
   state = {
     burgers: [],
-    value: 0
+    value: 0,
   };
   /* Función que se ejecutará cuando se renderise
     el componente, esta obtendrá datos del json y 
@@ -28,10 +27,11 @@ y con un value 0 que igual será prop para ticket */
           alt="burger"
           onClick={() => this.handleProductClicked(burger)}
         />
-        <p className="btn-name">{burger.item}</p>
-        <p className="btn-price">
+        <p className="btn-name">{burger.item} 
+        <span className="btn-price">
           <br />
           ${burger.price}
+        </span>
         </p>
         <InputNumeric className="btn-input" value={this.state.value} onChange={this.updateQuantity} id={burger.id}/>
       </object>
@@ -42,6 +42,7 @@ y con un value 0 que igual será prop para ticket */
   handleProductClicked = item => {
     this.setState({
       burgers: [...this.state.burgers, item],
+      value: 1
       /*no entiendo por qué tres puntos*/
     });
     console.log(item)
@@ -58,7 +59,7 @@ y con un value 0 que igual será prop para ticket */
     this.setState({
       value: e.value
     });
-    console.log(e.tare)
+    console.log(e)
     this.props.addQuantity(e)
   };
   /* Renderizando componente llamando a 

@@ -1,47 +1,58 @@
-import React from 'react';
-import Data from './data.json';
+import React from "react";
+import Data from "./data.json";
+import InputNumeric from "react-input-numeric";
 
+let complements = Data.filter(Data => Data.type === "complements");
 
-
-let complements = Data.filter(Data => Data.type === 'complements')
- 
 export default class Complements extends React.Component {
-    state = {
-        complements: []};
-        
-        renderBtns = () => 
-        complements.map(complement => (
-            <button
-            className="Box"
-            onClick={()=>this.handleDivClicked(complement)}
-            key={complement.id}
-            data-div_id={complement.item}
-            data-div_name={`Precio: ${complement.name}`}
-            >
-                <img className="btn-img" src={complement.img} alt="complement" />
-                <p className="btn-name">{complement.item}
-                <p className="btn-price">${complement.price}</p>
-                </p>
-            </button>
-        ));
+  state = {
+    complements: [],
+    value: 0
+  };
+  renderBtns = () =>
+    complements.map(complement => (
+      <object className="Box" key={complement.id}>
+        <img
+          className="btn-img"
+          src={complement.img}
+          alt="complement"
+          onClick={() => this.handleProductClicked(complement)}
+        />
+        <p className="btn-name">
+          {complement.item}
+          <span className="btn-price">
+            <br />${complement.price}
+          </span>
+        </p>
+        <InputNumeric
+          className="btn-input"
+          value={this.state.value}
+          onChange={this.updateQuantity}
+          id={complement.id}
+        />
+      </object>
+    ));
 
-handleDivClicked = item => {
-    this.setState ({
-        complements: [...this.state.complements, item]
+  handleProductClicked = item => {
+    this.setState({
+      complements: [...this.state.complements, item],
+      value: 1
     });
+    console.log(item);
     this.props.addToTicket(item);
-};
-
-render() {
+  };
+  updateQuantity = e => {
+    this.setState({
+      value: e.value
+    });
+    console.log(e);
+    this.props.addQuantity(e);
+  };
+  render() {
     return (
-        <div className="main-content">
-            <div className="container">
-                {this.renderBtns()}
-                {this.state.message &&(
-                    <div className="alert alert-primary">{this.state.message}</div>
-                    )}
-                    </div>
-                    </div>
-        )
-    }
+      <div className="main-content">
+        <div className="container">{this.renderBtns()}</div>
+      </div>
+    );
+  }
 }

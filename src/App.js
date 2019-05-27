@@ -46,13 +46,11 @@ class App  extends Component {
           <Home />
           <Details ticketElements={this.state.currentTicket} products={this.state.quantity}/>
           <NewOrder />
-          {/* <PrivateRoute exact path="/" component={Home} />
-          <Route exact path="/login" component={Login} /> */}
           <Route exact path="/meals" render={(props) => <Meals {...props} addToTicket={this.handleAddTicket.bind(this)} addQuantity={this.handleAddQuantity.bind(this)} />}/>
-          <Route exact path="/breakfastfood" render={(props) => <Breakfastfood {...props} addToTicket={this.handleAddTicket.bind(this)}/>}/>
-          <Route exact path="/breakfastdrinks" render={(props) => <BreakfastDrinks {...props} addToTicket={this.handleAddTicket.bind(this)}/>} />
-          <Route exact path="/drinks" component={Drinks} />
-          <Route exact path="/complements" render={(props) => <Complements {...props} addToTicket={this.handleAddTicket.bind(this)}/> } />
+          <Route exact path="/breakfastfood" render={(props) => <Breakfastfood {...props} addToTicket={this.handleAddTicket.bind(this)} addQuantity={this.handleAddQuantity.bind(this)} />}/>
+          <Route exact path="/breakfastdrinks" render={(props) => <BreakfastDrinks {...props} addToTicket={this.handleAddTicket.bind(this)} addQuantity={this.handleAddQuantity.bind(this)}/>} />
+          <Route exact path="/drinks" render={(props)=> <Drinks {...props} addToTicket={this.handleAddTicket.bind(this)} addQuantity={this.handleAddQuantity.bind(this)}/> } />
+          <Route exact path="/complements" render={(props) => <Complements {...props} addToTicket={this.handleAddTicket.bind(this)} addQuantity={this.handleAddQuantity.bind(this)} /> } />
         </div>
       </Router>
     </AuthProvider>

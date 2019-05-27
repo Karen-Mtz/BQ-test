@@ -72,8 +72,43 @@ a {
 .Ticket-details-h {
     color: white;
    text-align: center;
+   font-size: 23px;
 }
 
+.Detail {
+    border-spacing: 14px;
+}
+.Box-ticket{
+    margin: 5px 5px;
+    font-size: italic;
+    background-color: white;
+    color: #000;
+    margin-top: 20px;
+    display: flex;
+}
+
+.modal-name{
+    position: center;
+}
+/* .Box-total {
+    background-color: white;
+    color: #000;
+    margin-top: 427px;
+    margin-left: 168px;
+    display: flex;
+    width: 132px;
+    height: 53px;
+    font-size: 28px;
+    font-weight: bold;
+} */
+
+.ticket-text{
+    font-weight: 600;
+    font-size: 23px;
+    text-align: center;
+    size: 31px;
+    margin-left: 18px;
+}
 .New-order {
     background-color: #f9d802;
     padding: 9px 28px;
@@ -82,7 +117,8 @@ a {
     /* display: inline-block; */
     color: white;
     margin-top: 500px;
-    margin-left: 108px;
+    margin-left: 89px;
+
 }
 
 .client-name{
@@ -132,17 +168,18 @@ a {
     font-family: "Roboto";
     display: inline-table;
     font-size: 26px;
-
+    /* position: fixed; */
+    margin-left: 10px;
 }
 
 .btn-price {
     color: red;
     padding: -33px;
     font-size: 23px;
-    float: left
-
 }
-
+.btn-new-order {
+    grid-column: 2 / 5;
+}
 .input-numeric {
         display: inline-flex;
         align-items: center;
@@ -168,10 +205,12 @@ a {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     appearance: textfield;
+    appearance: textfield;
     border: 1px solid black;
     width: 33px;
     height: 30px;
 }
+
 
 body {
     background-color: #2f4858;

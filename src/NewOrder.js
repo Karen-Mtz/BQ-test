@@ -38,7 +38,7 @@ export default class NewOrder extends React.Component {
 
     render() {
         return (
-            <section>
+            <section className="btn-new-order">
                 <p className="client-name">{this.state.value}</p>
                 <button className="New-order" value="Open" onClick={() => this.openModal()}>NUEVA ORDEN</button>
                 <Modal
@@ -49,7 +49,7 @@ export default class NewOrder extends React.Component {
                     onClickAway={() => this.closeModal()}
                 >
                     <div>
-                        <form onSubmit={this.handleSubmit}>
+                        <form onSubmit={this.handleSubmit} className="modal-name">
                             <label>
                                 Nombre del cliente:
           <input type="text" value={this.state.value} onChange={this.handleChange} />
