@@ -3,6 +3,7 @@ import Data from "./data.json";
 import InputNumeric from "react-input-numeric";
 
 let burgers = Data.filter(Data => Data.type === "meals");
+console.log(burgers)
 /* Filtrando data del json */
 
 /* Creando y exportando componente de clase */
@@ -32,7 +33,7 @@ y con un value 0 que igual será prop para ticket */
           <br />
           ${burger.price}
         </p>
-        <InputNumeric value={this.state.value} onChange={this.updateQuantity} />
+        <InputNumeric className="btn-input" value={this.state.value} onChange={this.updateQuantity} id={burger.id}/>
       </object>
     ));
 
@@ -40,9 +41,10 @@ y con un value 0 que igual será prop para ticket */
         y agregarlo al array burgers para hacer un nuevo estado */
   handleProductClicked = item => {
     this.setState({
-      burgers: [...this.state.burgers, item]
+      burgers: [...this.state.burgers, item],
       /*no entiendo por qué tres puntos*/
     });
+    console.log(item)
     this.props.addToTicket(item);
     /* Creando los props para el componente 
             ticket con la función addToTicket con 
@@ -56,6 +58,7 @@ y con un value 0 que igual será prop para ticket */
     this.setState({
       value: e.value
     });
+    console.log(e.tare)
     this.props.addQuantity(e)
   };
   /* Renderizando componente llamando a 

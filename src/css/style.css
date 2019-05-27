@@ -76,15 +76,15 @@ a {
 
 .New-order {
     background-color: #f9d802;
-    padding: 22px 17px;
+    padding: 9px 28px;
     text-align: center;
-    /* border-radius: 7px; */
+    border-radius: 7px;
     /* display: inline-block; */
     color: white;
-    /* margin-top: 500px; */
-    /* margin-left: 90px; */
-
+    margin-top: 500px;
+    margin-left: 108px;
 }
+
 .client-name{
     font-family: "Roboto";
     font-size: "20px";
@@ -141,6 +141,36 @@ a {
     font-size: 23px;
     float: left
 
+}
+
+.input-numeric {
+        display: inline-flex;
+        align-items: center;
+        width: -7px;
+        height: unset;
+        margin-top: 47px;
+        margin-left: -80px;
+}
+
+.input-numeric button:first-of-type {
+    margin: 0 1px 0 0;
+    border-radius: 61%;
+    background-color: #c4c4c4;
+}
+
+.input-numeric button:last-of-type {
+    margin: 0 1px 0 0;
+    border-radius: 61%;
+    background-color: #c4c4c4;
+}
+
+.input-numeric input {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    border: 1px solid black;
+    width: 33px;
+    height: 30px;
 }
 
 body {
