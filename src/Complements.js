@@ -1,52 +1,33 @@
 import React from "react";
 import Data from "./data.json";
-import InputNumeric from "react-input-numeric";
+import ComplementsItem from './ComplementsItem';
+
 
 let complements = Data.filter(Data => Data.type === "complements");
 
 export default class Complements extends React.Component {
   state = {
     complements: [],
-    value: 0
   };
   renderBtns = () =>
-    complements.map(complement => (
-      <object className="Box" key={complement.id}>
-        <img
-          className="btn-img"
-          src={complement.img}
-          alt="complement"
-          onClick={() => this.handleProductClicked(complement)}
-        />
-        <p className="btn-name">
-          {complement.item}
-          <span className="btn-price">
-            <br />${complement.price}
-          </span>
-        </p>
-        <InputNumeric
-          className="btn-input"
-          value={this.state.value}
-          onChange={this.updateQuantity}
-          id={complement.id}
-        />
-      </object>
+    complements.map((complement, index) => (
+      <ComplementsItem
+           key={index}
+          complement={complement}
+          handleProductClicked={this.handleProductClicked} 
+          updateQuantity={this.updateQuantity}
+      />
     ));
-
-  handleProductClicked = item => {
+  handleProductClicked = (item) => {
     this.setState({
       complements: [...this.state.complements, item],
-      value: 1
     });
-    console.log(item);
+    console.log(item.price);
     this.props.addToTicket(item);
   };
-  updateQuantity = e => {
-    this.setState({
-      value: e.value
-    });
-    console.log(e);
-    this.props.addQuantity(e);
+  updateQuantity = (item, value) => {
+    item.quantity = value
+    this.props.addQuantity(item);
   };
   render() {
     return (

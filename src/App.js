@@ -31,9 +31,9 @@ class App  extends Component {
     })
   }
 
-  handleAddQuantity (e) {
+  handleAddQuantity (quantity) {
     this.setState ({
-      quantity: e
+      quantity
     })
   }
 

@@ -56,13 +56,15 @@
         "item": "Papas a la francesa",
         "img": "http://i68.tinypic.com/slmr6b.png",
         "price": 5,
-        "type": "complements"
+        "type": "complements",
+        "quantity": 0
     }, {
         "id": "rings-052",
         "item": "Aros de cebolla",
         "img": "http://i65.tinypic.com/mcbriv.png",
         "price": 5,
-        "type": "complements"
+        "type": "complements",
+        "quantity": 0
     }, {
         "id": "cheese-061",
         "item": "Queso",

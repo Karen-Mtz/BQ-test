@@ -7,19 +7,13 @@ export default class Details extends React.Component {
         total: 0
     }
 
-    changeTotal = price => {
-      
-    console.log(this.props.ticketElements.map(element => (
-        element.price
-    )))
-    }
+
     
 
     render() {
         return (
            
             <section className="Ticket-details">
-                 {this.changeTotal()}
                 <div>
       
         <table className="Detail">
@@ -36,7 +30,7 @@ export default class Details extends React.Component {
         {this.props.ticketElements.map(element =>(
             <div key={element.id}>
                 <object className="Box-ticket">
-                    <p className="ticket-text"> {this.props.products} {element.item} <span className="btn-price">${element.price}</span> </p>
+                    <p className="ticket-text"> {element.quantity} {element.item} <span className="btn-price">${element.price}</span> </p>
                 </object>
            
            </div>))}
