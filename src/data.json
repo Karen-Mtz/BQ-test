@@ -4,25 +4,29 @@
         "item": "Sandwich de jamón y queso",
         "img": "http://i66.tinypic.com/1zzizd4.png",
         "price": 10,
-        "type": "breakfast food"
+        "type": "breakfast food",
+        "quantity": 0
     }, {
         "id": "amcoff-021",
         "item": "Café americano",
         "img": "http://i64.tinypic.com/29dux38.png",
         "price": 5,
-        "type": "breakfast drinks"
+        "type": "breakfast drinks",
+        "quantity": 0
     }, {
         "id": "milkcoff-022",
         "item": "Café con leche",
         "img": "http://i64.tinypic.com/dfede.png",
         "price": 7,
-        "type": "breakfast drinks"
+        "type": "breakfast drinks",
+        "quantity": 0
     }, {
         "id": "juice-023",
         "item": "Jugo de frutas natural",
         "img": "http://i63.tinypic.com/14jmc0x.png",
         "price": 7,
-        "type": "breakfast drinks"
+        "type": "breakfast drinks",
+        "quantity": 0
     }, {
         "id": "sburger-031",
         "item": "Hamburguesa sencilla",
@@ -30,7 +34,7 @@
         "meat": ["Res", "Pollo", "Vegetariana"],
         "price": 10,
         "type": "meals",
-        "quantity": 5
+        "quantity": 1
     }, {
         "id": "dburger-032",
         "item": "Hamburguesa doble",
@@ -44,13 +48,15 @@
         "item": "Refresco 500 ml",
         "img":"http://i68.tinypic.com/2v9y8wo.png",
         "price": 7,
-        "type": "drinks"
+        "type": "drinks",
+        "quantity": 0
     }, {
         "id": "water-043",
         "item": "Agua 500 ml",
         "img": "http://i67.tinypic.com/8y8fq1.png",
         "price": 5,
-        "type": "drinks"
+        "type": "drinks",
+        "quantity": 0
     }, {
         "id": "fries-051",
         "item": "Papas a la francesa",

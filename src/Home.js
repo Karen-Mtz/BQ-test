@@ -7,7 +7,7 @@ const Home = () => {
   if (hour >= 5 && hour < 12) {
     return (
         <div className="Main-menu">
-            <table>
+            <table className="Nav-table">
             <tbody>
             <tr>
                 <td className='Nav-food-and-drinks'><Link className="nav-menu__link" to="/breakfastfood">Alimentos</Link></td>
@@ -21,7 +21,7 @@ const Home = () => {
     } else {
         return (
             <div className="Main-menu">
-                <table>
+                <table className="Nav-table">
                 <tbody>
                     <tr>
             <td className='Nav-food-and-drinks'><Link className="nav-menu__link" to="/meals">Alimentos</Link></td>
@@ -29,8 +29,9 @@ const Home = () => {
             <td className='Nav-food-and-drinks'><Link className="nav-menu__link" to="/complements">Complementos</Link></td>                
             </tr>
             </tbody>
+           
             </table>
-            <hr />
+
             {/* <button onClick={() => app.auth().signOut()}>Sign out</button> */}
         </div>
         );

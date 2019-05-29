@@ -13,7 +13,7 @@ import Complements from './Complements';
 import Breakfastfood from './Breakfastfood';
 // import Menu from './Menu';
 import BreakfastDrinks from './BreakfastDrinks';
-import NewOrder from './NewOrder';
+
 
 
 class App  extends Component {
@@ -21,7 +21,8 @@ class App  extends Component {
     super(props);
     this.state = {
       currentTicket: [],
-      quantity: 0
+      quantity: 0,
+      bill: 0
     };
   }
 
@@ -37,6 +38,12 @@ class App  extends Component {
     })
   }
 
+  handleTotal (bill) {
+    this.setState ({
+      bill
+    })
+  }
+
   render () {
   return (
     <AuthProvider>
@@ -44,8 +51,7 @@ class App  extends Component {
         <div className="App">
           <Navbar />
           <Home />
-          <Details ticketElements={this.state.currentTicket} products={this.state.quantity}/>
-          <NewOrder />
+          <Details ticketElements={this.state.currentTicket} products={this.state.quantity} bill={this.state.bill}/>
           <Route exact path="/meals" render={(props) => <Meals {...props} addToTicket={this.handleAddTicket.bind(this)} addQuantity={this.handleAddQuantity.bind(this)} />}/>
           <Route exact path="/breakfastfood" render={(props) => <Breakfastfood {...props} addToTicket={this.handleAddTicket.bind(this)} addQuantity={this.handleAddQuantity.bind(this)} />}/>
           <Route exact path="/breakfastdrinks" render={(props) => <BreakfastDrinks {...props} addToTicket={this.handleAddTicket.bind(this)} addQuantity={this.handleAddQuantity.bind(this)}/>} />

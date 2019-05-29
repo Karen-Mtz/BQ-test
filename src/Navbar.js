@@ -5,8 +5,8 @@ import BM from './hamburgermenu.png';
 const Navbar = () => {
     return(
         <nav className="Nav-bq">         
-            <h2 className="Order-Details">Detalle de orden</h2>
-            <a className="Nav-bq-menu" href="/"><img src={BM} className="Bmenu" alt="bm"></img></a>
+            <p className="Order-Details">Detalle de orden</p>
+            <a className="Nav-bq-menu"><img src={BM} className="Bmenu" alt="bm"></img></a>
     </nav>
 
 );

@@ -1,6 +1,6 @@
 import React from "react";
 import Data from "./data.json";
-import InputNumeric from "react-input-numeric";
+import MealsItems from './MealsItems';
 
 let burgers = Data.filter(Data => Data.type === "meals");
 /* Filtrando data del json */
@@ -13,39 +13,27 @@ ese array pasará como prop al componente ticket
 y con un value 0 que igual será prop para ticket */
   state = {
     burgers: [],
-    value: 0,
+    bill: 0,
   };
   /* Función que se ejecutará cuando se renderise
     el componente, esta obtendrá datos del json y 
     pintará los botones de los productos */
   renderBtns = () =>
-    burgers.map(burger => (
-      <object className="Box" key={burger.id}>
-        <img
-          className="btn-img"
-          src={burger.img}
-          alt="burger"
-          onClick={() => this.handleProductClicked(burger)}
-        />
-        <p className="btn-name">{burger.item} 
-        <span className="btn-price">
-          <br />
-          ${burger.price}
-        </span>
-        </p>
-        <InputNumeric className="btn-input" value={this.state.value} onChange={this.updateQuantity} id={burger.id}/>
-      </object>
+    burgers.map((burger, index) => (
+      <MealsItems
+      key={index}
+      burger={burger}
+      handleProductClicked={this.handleProductClicked}
+      updateQuantity={this.updateQuantity}
+      />
     ));
-
   /* Función para determinar qué producto fue seleccionado
         y agregarlo al array burgers para hacer un nuevo estado */
   handleProductClicked = item => {
     this.setState({
       burgers: [...this.state.burgers, item],
-      value: 1
       /*no entiendo por qué tres puntos*/
     });
-    console.log(item)
     this.props.addToTicket(item);
     /* Creando los props para el componente 
             ticket con la función addToTicket con 
@@ -55,19 +43,28 @@ y con un value 0 que igual será prop para ticket */
         con el input number igual será prop que recibirá
         el componente ticket para sumar el total. Esta 
         función modifica el estado inicial de value */
-  updateQuantity = e => {
-    this.setState({
-      value: e.value
-    });
-    console.log(e)
-    this.props.addQuantity(e)
+  updateQuantity = (item, value) => {
+    item.quantity = value
+    this.props.addQuantity(item);
   };
+   total = () => {
+     let elements = this.state.burgers
+     let t = elements.map(element => ( 
+       element.price*element.quantity))
+       if(t.length >=1) {
+         let total = t.reduce((a,b) => a+b)
+         return (
+           <object className = "Box-total">Total: <span className="price">${total}</span></object>
+         )
+       }
+      }
   /* Renderizando componente llamando a 
         la función renderBtns para pintarlos en el div*/
   render() {
     return (
       <div className="main-content">
-        <div className="container">{this.renderBtns()}</div>
+        {this.total()}
+        <article className="container">{this.renderBtns()}</article>
       </div>
     );
   }

@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body{
+    background-color: brown;
+
+}
+
+.App {
+    margin: 0;
+} 
+
+.Nav-bq {
+    overflow: hidden;
+    background-color: white;
+}
+
+/*TABLET*/
+
+@media (min-width: 768px) {
+
+.Order-Details {
+    float: right;
+    margin-right: 34px;
+    font-family: 'Muli', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    font-weight: 800;
+}
+
+.Bmenu{
+       width: 26px;
+       margin-top: 12px;
+       margin-left: 15px;
+ }
+
+ .Main-menu{
+    width: 60%;
+    background: #2f4858;
+    height: 38px;
+ }
+ 
+ .Main-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px
+ }
+
+ .Nav-table {
+    margin-left: 7px;
+    width: 122%;
+ }
+ 
+ .Nav-table td :hover {
+    border-bottom: solid #55dde0;
+ }
+ 
+}
+
+/*DESKTOP*/
+
+@media (min-width: 1024px) {
+
+    .Order-Details {
+        float: right;
+        margin-right: 46px;
+        font-family: 'Muli', sans-serif;
+        letter-spacing: 2px;
+        word-spacing: 9px;
+        font-weight: 700;
+        font-size: 23px;
+    }
+    
+    .Bmenu {
+        width: 37px;
+        margin-top: 17px;
+        margin-left: 18px;
+        margin-bottom: 10px;
+     }
+
+    .Main-menu {
+        width: 60%;
+        background: #2f4858;
+        height: 64px;
+    }
+
+    .Main-menu a {
+        color: #ffffff;
+        text-decoration: none;
+        font-family:   'Muli', sans-serif ;
+        font-size: 24px
+     }
+
+     .Ticket-Details {
+        background-color: #33658a;
+     }
+
+     .Detail {
+        background-color: #33658a;
+        height: 46px;
+        margin-left: 60%;
+        width: 40%;
+        margin-top: -64px;
+        font-family: 'Muli', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .btn-new-order {
+        float: right;
+        /* margin-top: 72px; */
+        position: fixed;
+        margin-left: 75%;
+        margin-top: 41%;
+    }
+
+    .New-order {
+        background-color: #f9d802;
+   text-align: center;
+   border-radius: 7px;
+   display: inline-block;
+   color: white;
+   padding: 22px 17px;  
+    }
+
+    .modal-p {
+        font-family: 'Muli', sans-serif;
+    text-align: left;
+    margin-left: 34px;
+    font-size: 28px;
+    font-weight: 1000;
+    margin-top: 52px;
+    }
+
+    .modal-input {
+        border-style: solid blue;
+        /* border-width: 8px; */
+        align-content: center;
+        /* border: blue; */
+        float: center;
+        size: 30px;
+        margin-left: 34px;
+        height: 41px;
+        width: 75%;
+        border-radius: 5px;
+        border-color: #5585e2c8;
+        margin-bottom: 62px;
+        margin-top: -4px; 
+    }
+
+    .Yellow{
+        background-color: #f9d802;
+        text-align: center;
+        border-radius: 7px;
+        display: inline-block;
+        color: white;
+        padding: 12px 17px;
+        /* margin-left: 117px; */
+        align-content: center;
+        margin-left: 136px;
+     }
+     .client-name{
+        color: white;
+        font-size: 29px;
+        font-family: 'Muli', sans-serif;
+            /* position: absolute; */
+    margin-right: 31%;
+    float: right;
+     }
+
+     .main-content {
+        width: 60%;
+        height: 601px;
+        margin: 0;
+        background-color: #2f4858;
+    }
+
+    .Box {
+        margin: 21px 13px 37px;
+        font-size: italic;
+        background-color: white;
+        color: #000;
+        border-radius: 26px;
+        /* margin-top: 25px; */
+        width: 421px;
+        display: flex;
+        font-size: 23px;
+        font-family: 'Muli', sans-serif;
+        font-weight: 700;
+     }
+     .btn-img {
+        float: left;
+        height: 1%;
+        margin-top: 12px;
+        margin-right: 6px;
+        margin-left: 6px;
+        margin-bottom: 11px;
+     
+     }
+          
+}
+
+/*MOBILE*/
+
+@media (max-width: 767px) {
+    
+    .Order-Details {
+        float: right;
+        margin-right: 20px;
+        font-family: 'Muli', sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    
+    .Bmenu{
+           width:19px;
+           margin-top: 10px;
+           margin-left: 15px;
+     }
+ .Main-menu{
+    width: 65%;
+    background: #2f4858;
+    height: 38px;
+ }
+ 
+ .Main-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    font-size: 10px
+ }
+
+ .Nav-table {
+    margin-left: 7px;
+    width: 100%;
+ }
+ 
+ .Nav-table td :hover {
+    border-bottom: solid #55dde0;
+ }
+}

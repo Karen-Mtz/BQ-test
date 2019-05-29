@@ -1,221 +1,286 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px)  {
 
-.App {
-    display: grid;
-    grid-template-columns: auto 100px 100px 100px;
-    grid-template-rows: 75px 70px;
-}
-
-.Nav-bq {
-    grid-column: 1/5;
-    grid-row: 1;
-    background-color: #ffffff;
+    .App {
+       display: grid;
+       grid-template-columns: auto 100px 100px 100px;
+       grid-template-rows: 75px 70px;
+    }
     
-}
-.Bmenu{
-    display: block;
-    padding: 3%;
-    width: 27px;
-}
-.Nav-bq-menu {
-    position: relative
-}
-
-
-
-.Order-Details{
-margin-right: 55px;
-float:right;
-font-family: "Roboto";
-font-size: 25px;
-}
-
-.Main-menu{
-    background-color: #2f4858; 
-
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.Nav-food-and-drinks {
-    display: inline-block;
-    white-space: normal;
-    text-decoration: none;
-    font-family: "Roboto";
+    .Nav-bq {
+       grid-column: 1/5;
+       grid-row: 1;
+       background-color: #ffffff;
+      
+    }
+    .Bmenu{
+       display: block;
+       padding: 3%;
+       width: 27px;
+    }
+    .Nav-bq-menu {
+       position: relative
+    }
+    
+    .Order-Details{
+    margin-right: 55px;
+    float:right;
+    font-family: 'Muli', sans-serif;
     font-size: 25px;
-    color: #ffffff;
-    padding: 5px;
-    padding-left: 0px;
+    }
+    
+    .Main-menu{
+       background-color: #2f4858;
+    
+    }
+    
+    a {
+       color: #ffffff;
+       text-decoration: none;
+    }
+    
+    .Nav-food-and-drinks {
+       /* display: inline-block; */
+       white-space: normal;
+       text-decoration: none;
+       font-family:'Muli', sans-serif;
+       font-size: 25px;
+       color: #ffffff;
+       padding: 5px;
+       /* padding-left: 0px; */
+       text-align: left;
+    }
+    td :hover {
+       border-bottom: solid;
+       border-bottom-color:#55dde0
+    }
+    .main-content {
+       grid-row: 3;
+       grid-column: 1 ;
+       height: 100%;
+       background-color: #2f4858;
+       margin-top: 0%;
+       padding: 0%
+    }
+    
+    .Ticket-details {
+       grid-column: 2 / 5;
+       background-color: #33658a;
+       height: 760px;
+    }
+    
+    .Ticket-details-h {
+       color: white;
+      text-align: center;
+      font-size: 23px;
+    }
+    
+    .Detail{
+           width: 100%;
+    }
+    
+    .Nav-table {
+       width: 115%;
+       border-collapse: collapse;
+       border-bottom: solid 1px white;
+    }
+    
+    
+    tbody {
+       text-align: center
+    }
+    .box-ticket{
+       margin: 5px 5px;
+       font-size: italic;
+       background-color: white;
+       color: #000;
+       margin-top: 20px;
+       display: flex;
+    }
+    
+    .modal-name{
+       position: center;
+    }
+    .Box-total {
+      background-color: white;
+      color: #000;
+      margin-top: 427px;
+      margin-left: 168px;
+      display: flex;
+      width: 132px;
+      height: 53px;
+      font-size: 28px;
+      font-weight: bold;
+      float: left;
+      margin-left: 123%;
+      /* margin-right: -31%; */
+      margin-top: 374px;
+    }
+    
+    .ticket-text{
+       font-weight: 600;
+       font-size: 20px;
+       text-align: center;
+       size: 31px;
+       margin-left: 18px;
+    }
+    .New-order {
+       background-color: #f9d802;
+       padding: 9px 28px;
+       text-align: center;
+       border-radius: 7px;
+       /* display: inline-block; */
+       color: white;
+       margin-top: 500px;
+       margin-left: 89px;
+    
+    }
+    
+    .client-name{
+       font-family: 'Muli', sans-serif;
+       font-size: 26px;
+       color: white;
+     margin-left: 13px;
+    }
+    .Yellow{
+       background-color: #f9d802;
+       text-align: center;
+       border-radius: 7px;
+       display: inline-block;
+       color: white;
+       padding: 22px 17px;  
+    }
+    
+    .container {
+       position: fixed;
+       margin-top:5px;
+    }
+    
+    .Box {
+       margin: 7px 10px 35px;
+       font-size: italic;
+       background-color: white;
+       color: #000;
+       border-radius: 26px;
+       margin-top: -15px;
+       width: 421px;
+       display: flex;
+       font-size: 23px;
+       font-family: 'Muli', sans-serif;
+       font-weight: 700;
+    }
+    
+    .btn-img {
+       float: left;
+       height: 1%;
+       margin-top: 12px;
+       margin-right: 6px;
+       margin-left: 6px;
+       margin-bottom: 11px;
+    
+    }
+    
+    .btn-name{
+       color: black;
+       font-family: 'Muli', sans-serif;
+       display: inline-table;
+       font-size: 26px;
+       /* position: fixed; */
+       margin-left: 10px;
+    }
+    
+    .btn-price {
+       color: red;
+       padding: -33px;
+       font-size: 23px;
+    }
 
-}
-
-.main-content {
-    grid-row: 3;
-    grid-column: 1 ;
-    height: 100%;
-    background-color: #2f4858;
-    margin-top: 0%;
-    padding: 0%
-}
-
-.Ticket-details {
-    grid-column: 2 / 5;
-    background-color: #33658a;
-    height: 760px;
-}
-
-.Ticket-details-h {
-    color: white;
-   text-align: center;
-   font-size: 23px;
-}
-
-.Detail {
-    border-spacing: 14px;
-}
-.Box-ticket{
-    margin: 5px 5px;
-    font-size: italic;
-    background-color: white;
-    color: #000;
-    margin-top: 20px;
-    display: flex;
-}
-
-.modal-name{
-    position: center;
-}
- .Box-total {
-    background-color: white;
-    color: #000;
-    margin-top: 427px;
-    margin-left: 168px;
-    display: flex;
-    width: 132px;
-    height: 53px;
+    .price{
+       color:red
+    }
+  
+      .btn-new-order {
+         grid-column: 2 / 5;
+         margin-top: -175px;
+         grid-auto-rows: ;
+         margin-top: 135%;
+    }
+    .input-numeric {
+           display: inline-flex;
+           align-items: center;
+           width: -7px;
+           height: unset;
+           margin-top: 47px;
+           margin-left: -80px;
+    }
+    
+    .input-numeric button:first-of-type {
+       margin: 0 1px 0 0;
+       border-radius: 61%;
+       background-color: #c4c4c4;
+    }
+    
+    .input-numeric button:last-of-type {
+       margin: 0 1px 0 0;
+       border-radius: 61%;
+       background-color: #c4c4c4;
+    }
+    
+    .input-numeric input  {
+       -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+       appearance: textfield;
+       -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+       appearance: textfield;
+       appearance: textfield;
+       border: 1px solid black !important;
+       width: 36px !important;
+       height: 30px !important;
+    }
+    
+    body {
+       background-color: #2f4858;
+       font-family: 'Muli', sans-serif;
+       max-height: 553px;
+    }
+    .modal-p {
+        font-family: 'Muli', sans-serif;
+    text-align: left;
+    margin-left: 34px;
     font-size: 28px;
-    font-weight: bold;
-} 
+    font-weight: 1000;
+    margin-top: 52px;
+    }
 
-.ticket-text{
-    font-weight: 600;
-    font-size: 23px;
-    text-align: center;
-    size: 31px;
-    margin-left: 18px;
-}
-.New-order {
-    background-color: #f9d802;
-    padding: 9px 28px;
-    text-align: center;
-    border-radius: 7px;
-    /* display: inline-block; */
-    color: white;
-    margin-top: 500px;
-    margin-left: 89px;
+    .modal-input {
+        border-style: solid blue;
+        /* border-width: 8px; */
+        align-content: center;
+        /* border: blue; */
+        float: center;
+        size: 30px;
+        margin-left: 34px;
+        height: 41px;
+        width: 75%;
+        border-radius: 5px;
+        border-color: #5585e2c8;
+        margin-bottom: 62px;
+        margin-top: -4px; 
+    }
 
-}
-
-.client-name{
-    font-family: "Roboto";
-    font-size: "20px";
-    color: white;
-  margin-left: 13px;
-}
-.Yellow{
-    background-color: #f9d802;
-    text-align: center;
-    border-radius: 7px;
-    display: inline-block;
-    color: white;
-    padding: 22px 17px;   
-}
-
-.container {
-    position: fixed;
-    margin-top:5px;
-}
-
-.Box {
-
-    margin: 5px 5px;
-    font-size: italic;
-    background-color: white;
-    color: #000;
-    border-radius: 26px;
-    margin-top: 20px;
-    width: 421px;
-    display: flex;
-}
-
-.btn-img {
-    float: left;
-    height: 1%;
-    margin-top: 12px;
-    margin-right: 6px;
-    margin-left: 6px;
-    margin-bottom: 11px;
-
-}
-
-.btn-name{
-    color: black;
-    font-family: "Roboto";
-    display: inline-table;
-    font-size: 26px;
-    /* position: fixed; */
-    margin-left: 10px;
-}
-
-.btn-price {
-    color: red;
-    padding: -33px;
-    font-size: 23px;
-}
-.btn-new-order {
-    grid-column: 2 / 5;
-}
-.input-numeric {
-        display: inline-flex;
-        align-items: center;
-        width: -7px;
-        height: unset;
-        margin-top: 47px;
-        margin-left: -80px;
-}
-
-.input-numeric button:first-of-type {
-    margin: 0 1px 0 0;
-    border-radius: 61%;
-    background-color: #c4c4c4;
-}
-
-.input-numeric button:last-of-type {
-    margin: 0 1px 0 0;
-    border-radius: 61%;
-    background-color: #c4c4c4;
-}
-
-.input-numeric input {
-    -webkit-appearance: textfield;
-    -moz-appearance: textfield;
-    appearance: textfield;
-    appearance: textfield;
-    border: 1px solid black;
-    width: 33px;
-    height: 30px;
-}
-
-
-body {
-    background-color: #2f4858;
-    font-family: "Roboto";
-}
-
-
-  }
+    .Yellow{
+        background-color: #f9d802;
+        text-align: center;
+        border-radius: 7px;
+        display: inline-block;
+        color: white;
+        padding: 12px 17px;
+        /* margin-left: 117px; */
+        align-content: center;
+        margin-left: 136px;
+     }
+    }
+    
+    

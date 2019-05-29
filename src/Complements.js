@@ -8,6 +8,7 @@ let complements = Data.filter(Data => Data.type === "complements");
 export default class Complements extends React.Component {
   state = {
     complements: [],
+    bill: 0
   };
   renderBtns = () =>
     complements.map((complement, index) => (
@@ -22,17 +23,30 @@ export default class Complements extends React.Component {
     this.setState({
       complements: [...this.state.complements, item],
     });
-    console.log(item.price);
     this.props.addToTicket(item);
   };
   updateQuantity = (item, value) => {
     item.quantity = value
     this.props.addQuantity(item);
   };
+
+  total = () => {
+    let elements = this.state.complements
+    let t = elements.map(element => (
+      element.price*element.quantity))
+      if(t.length >=1) {
+ let total= t.reduce((a,b) => a + b)
+ return (
+   <object className="Box-total">Total: <span className="price">${total}</span ></object>
+ )
+}
+}
+
   render() {
     return (
       <div className="main-content">
-        <div className="container">{this.renderBtns()}</div>
+      {this.total()}
+        <article className="container">{this.renderBtns()}</article>
       </div>
     );
   }
