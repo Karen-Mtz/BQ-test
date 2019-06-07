@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import './css/style.css';
+import '../css/style.css';
 import Home from "./Home";
 // import Login from "./Login";
 import { AuthProvider } from "./Auth";

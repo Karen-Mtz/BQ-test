@@ -203,7 +203,6 @@
       .btn-new-order {
          grid-column: 2 / 5;
          margin-top: -175px;
-         grid-auto-rows: ;
          margin-top: 135%;
     }
     .input-numeric {
